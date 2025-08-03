@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.profile-container {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 960px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #d6e0f5;
+  margin: 10px 0 20px;
+}
+
+.btn {
+  background-color: #00bfff;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0099cc;
+}
+
+/* Sections */
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 1.6em;
+  margin-bottom: 12px;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff40;
+  padding-bottom: 5px;
+}
+
+.about p,
+.experience ul li,
+.projects p,
+.certifications li {
+  color: #e0e0f0;
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.skills-grid div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.skills-grid div:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Projects */
+.project {
+  margin-bottom: 18px;
+}
+
+.project h3 {
+  font-size: 1.2em;
+  color: #aeefff;
+}
+
+/* Contact */
+.contact a {
+  color: #00d1ff;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.2s;
+}
+
+.contact a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-container {
+    padding: 20px;
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+  section h2 {
+    font-size: 1.3em;
+  }
+}
